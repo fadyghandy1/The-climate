@@ -55,12 +55,7 @@ function SingleDeatiledCard({ data, onClick, i, currentShow, setCurrentShow }) {
     >
       <div className='left-hdata'>
         <p className='day-info'>{dateFormated}</p>
-        <Image
-          alt='icon'
-          src={`https://${data.condition.icon}`}
-          width={100}
-          height={100}
-        />
+       
         <div className='night-and-day'>{data.temp_c}&#8451;</div>
       </div>
       <div className={i === currentShow ? 'right-hdata' : 'right-hdata close'}>
